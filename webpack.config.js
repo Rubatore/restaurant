@@ -6,6 +6,14 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"], //Important:Dont change the order of the style- and css-loader.
+      },
+    ],
+  },
   watch: true,
   mode: "development",
 };
