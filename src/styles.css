@@ -1,18 +1,16 @@
 body {
   margin: 0;
-}
-.background {
   background: url("../images/78b47f14e32aa57afc482c9d9fd8af2a.jpg") no-repeat
     center fixed;
   background-position-y: 25%;
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   padding: 20px;
 }
+#content {
+  display: flex;
+  flex-direction: column;
+}
 .header {
-  position: fixed;
   left: 50%;
   right: 50%;
   font-size: 25px;
@@ -24,6 +22,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+i {
+  margin: 10px;
+}
 .item:hover {
   background-color: rgba(174, 97, 90, 0.4);
   cursor: pointer;
@@ -32,13 +33,34 @@ body {
   padding: 0 20px;
   border-radius: 10px;
 }
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 25px;
+}
 .container {
+  font-size: 20px;
   align-self: center;
   text-align: center;
   color: bisque;
   width: clamp(400px, 60%, 900px);
-  margin-top: 60px;
+  margin-top: 40px;
   border-radius: 10px;
   background-color: rgba(174, 97, 90, 0.4);
   padding: 20px 30px;
+}
+.foodcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.food {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+.fooddescription {
+  width: 200px;
+  text-align: left;
 }
